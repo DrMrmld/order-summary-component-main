@@ -1,0 +1,217 @@
+* {
+  font-family: 'Red Hat Display';
+}
+
+body {
+  margin: 0;
+  background-image: url('images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* General styles of receipt */
+.receipt {
+  width: 450px;
+  height: 700px;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px hsl(225, 100%, 94%);
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* Hero styles */
+.hero {
+  width: 100%;
+  height: 220px;
+  background-image: url('images/illustration-hero.svg');
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+/* Main content styles */
+.main h1,
+.main h2 {
+  color: hsl(223, 47%, 23%);
+}
+
+.main h1 {
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+.main p {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  padding: 0 50px;
+}
+
+
+/* Block that shows order details: price, actions, name */
+.order-price {
+  display: flex;
+  width: 350px;
+  margin: 20px auto;
+  background-color: hsl(225, 100%, 98%);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.music-icon {
+  background-image: url('images/icon-music.svg');
+  background-repeat: no-repeat;
+  flex: 0 0 60px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-position: center;
+}
+
+.order-details {
+  flex: 0 0 175px;
+  padding-left: 5px;
+}
+
+.order-details h2 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.order-details p {
+  font-size: 15px;
+  text-align: left;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.order-action {
+  flex: 0 0 auto;
+  padding: 10px 0;
+}
+
+.order-action a {
+  vertical-align: middle;
+  font-size: 14px;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+
+.order-action a:hover {
+  text-decoration: none;
+  color: rgb(118, 108, 241);
+}
+
+
+/* Buttons styles */
+.buttons a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.buttons a.proceed-button {
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 10px 50px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 255, 0.25);
+  box-sizing: border-box;
+}
+
+.buttons a.proceed-button:hover {
+  background-color: rgb(118, 108, 241);
+}
+
+div.cancel-button {
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
+  margin: 10px 50px;
+  padding: 15px 0;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  box-sizing: border-box;
+}
+
+a.cancel-button {
+  color: hsl(224, 23%, 55%);
+}
+
+a.cancel-button:hover {
+  color: #000;
+}
+
+/* Responsive design */
+@media screen and (max-width: 500px) {
+
+  .receipt {
+    width: 420px;
+    height: 680px;
+  }
+
+
+  .hero {
+    height: 200px;
+  }
+
+
+  .main h1 {
+    margin-top: 30px;
+  }
+
+  .main p {
+    padding: 0 65px;
+    margin-bottom: 30px;
+  }
+
+
+  .music-icon {
+    height: 60px;
+  }
+
+
+  .order-price {
+    width: 320px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .order-details {
+    flex-basis: 165px;
+  }
+
+  .order-details h2 {
+    font-size: 17px;
+  }
+
+  .order-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .order-action {
+    padding: 18px 0;
+  }
+
+
+  .buttons a {
+    font-size: 17px;
+  }
+
+  .buttons a.proceed-button {
+    width: 320px;
+  }
+
+  div.cancel-button {
+    width: 320px;
+  }
+}
