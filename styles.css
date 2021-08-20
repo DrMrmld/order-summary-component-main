@@ -149,6 +149,27 @@ a.cancel-button:hover {
   color: #000;
 }
 
+
+/* Attribution styles */
+.attribution {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.attribution a {
+  color: blue;
+}
+
+.attribution a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+
+
 /* Responsive design */
 @media screen and (max-width: 500px) {
 
@@ -213,6 +234,11 @@ a.cancel-button:hover {
 
   div.cancel-button {
     width: 320px;
+  }
+
+
+  .attribution {
+    width: 420px;
   }
 }
 
@@ -279,6 +305,11 @@ a.cancel-button:hover {
   div.cancel-button {
     width: 80%;
     margin: 10px 10%;
+  }
+
+
+  .attribution {
+    width: 85%;
   }
 }
 
