@@ -6,8 +6,7 @@ body {
   margin: 0;
   background-image: url('images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: contain;
 }
 
 /* General styles of receipt */
@@ -16,7 +15,7 @@ body {
   height: 700px;
   margin: 30px auto;
   border-radius: 15px;
-  box-shadow: 0 10px 15px hsl(225, 100%, 94%);
+  box-shadow: 0 5px 15px hsl(224, 23%, 55%);
   box-sizing: border-box;
   background-color: #fff;
 }
@@ -27,6 +26,7 @@ body {
   height: 220px;
   background-image: url('images/illustration-hero.svg');
   background-size: cover;
+  background-repeat: no-repeat;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -109,6 +109,7 @@ body {
 .buttons a {
   font-size: 15px;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .buttons a.proceed-button {
@@ -173,9 +174,14 @@ a.cancel-button:hover {
 /* Responsive design */
 @media screen and (max-width: 500px) {
 
+  body {
+    background-image: url('images/pattern-background-mobile.svg');
+  }
+
+
   .receipt {
     width: 420px;
-    height: 680px;
+    height: 640px;
   }
 
 
@@ -244,13 +250,24 @@ a.cancel-button:hover {
 
 
 @media screen and (max-width: 430px) {
+  body {
+    background-image: url('images/pattern-background-mobile.svg');
+  }
+
+
+  .hero {
+    background-size: contain;
+    height: 180px;
+  }
+
+
   .receipt {
     width: 85%;
-    height: 650px;
+    height: 590px;
   }
 
   .main h1 {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .main p {
@@ -314,11 +331,30 @@ a.cancel-button:hover {
 }
 
 @media screen and (max-width: 375px) {
+  body {
+    background-image: url('images/pattern-background-mobile.svg');
+  }
+
+
+  .hero {
+    height: 156px;
+  }
+
+  .receipt {
+    height: 580px;
+  }
+
+
   .order-details h2 {
     font-size: 16px;
   }
 
   .order-details p {
     font-size: 15px;
+  }
+
+
+  .buttons div.cancel-button {
+    padding: 10px 0;
   }
 }
